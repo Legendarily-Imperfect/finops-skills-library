@@ -1,0 +1,12 @@
+{
+  "comment": "The one place colors live. Swap these for your brand and every artifact follows.",
+  "ink": "#1f2937",
+  "bg": "#ffffff",
+  "accent": "#0f766e",
+  "table_header_bg": "#134e4a",
+  "table_header_ink": "#ffffff",
+  "callout_bg": "#f0fdfa",
+  "row_alt_bg": "#f8fafc",
+  "font": "Segoe UI",
+  "mono": "Consolas"
+}

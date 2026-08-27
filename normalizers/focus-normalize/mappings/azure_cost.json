@@ -1,0 +1,32 @@
+{
+  "comment": "Azure Cost Management actual/amortized cost export (EA/MCA schema). Tags arrive as a JSON object string. Dates are per-day in the Date column.",
+  "fingerprint": ["CostInBillingCurrency", "Date", "MeterCategory", "SubscriptionId"],
+  "columns": {
+    "BillingAccountId": "BillingAccountId",
+    "BillingAccountName": "BillingAccountName",
+    "SubscriptionId": "SubAccountId",
+    "SubscriptionName": "SubAccountName",
+    "BillingPeriodStartDate": "BillingPeriodStart",
+    "BillingPeriodEndDate": "BillingPeriodEnd",
+    "Date": "ChargePeriodStart",
+    "CostInBillingCurrency": "BilledCost",
+    "BillingCurrencyCode": "BillingCurrency",
+    "ChargeType": "ChargeCategory",
+    "ProductName": "ChargeDescription",
+    "MeterCategory": "ServiceName",
+    "MeterSubCategory": "ServiceCategory",
+    "ResourceId": "ResourceId",
+    "ResourceName": "ResourceName",
+    "ResourceLocation": "RegionId",
+    "Quantity": "ConsumedQuantity",
+    "UnitOfMeasure": "ConsumedUnit",
+    "MeterId": "SkuId"
+  },
+  "money_columns": ["BilledCost"],
+  "tag_json_column": "Tags",
+  "constants": {
+    "ProviderName": "Azure",
+    "PublisherName": "Azure",
+    "InvoiceIssuerName": "Azure"
+  }
+}

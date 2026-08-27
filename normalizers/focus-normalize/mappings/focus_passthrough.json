@@ -1,0 +1,25 @@
+{
+  "comment": "Input already carries FOCUS core columns (for example this library's synthetic data). Money is still re-rendered via Decimal so downstream guarantees hold regardless of origin.",
+  "fingerprint": ["BilledCost", "ChargePeriodStart", "ProviderName", "ServiceName", "Tags"],
+  "columns": {
+    "BillingAccountId": "BillingAccountId", "BillingAccountName": "BillingAccountName",
+    "SubAccountId": "SubAccountId", "SubAccountName": "SubAccountName",
+    "BillingPeriodStart": "BillingPeriodStart", "BillingPeriodEnd": "BillingPeriodEnd",
+    "ChargePeriodStart": "ChargePeriodStart", "ChargePeriodEnd": "ChargePeriodEnd",
+    "BilledCost": "BilledCost", "EffectiveCost": "EffectiveCost",
+    "ListCost": "ListCost", "ContractedCost": "ContractedCost",
+    "BillingCurrency": "BillingCurrency",
+    "ChargeCategory": "ChargeCategory", "ChargeDescription": "ChargeDescription",
+    "CommitmentDiscountId": "CommitmentDiscountId", "CommitmentDiscountStatus": "CommitmentDiscountStatus",
+    "ProviderName": "ProviderName", "PublisherName": "PublisherName", "InvoiceIssuerName": "InvoiceIssuerName",
+    "ServiceName": "ServiceName", "ServiceCategory": "ServiceCategory",
+    "ResourceId": "ResourceId", "ResourceName": "ResourceName", "ResourceType": "ResourceType",
+    "RegionId": "RegionId", "RegionName": "RegionName",
+    "ConsumedQuantity": "ConsumedQuantity", "ConsumedUnit": "ConsumedUnit",
+    "PricingQuantity": "PricingQuantity", "PricingUnit": "PricingUnit",
+    "SkuId": "SkuId", "SkuPriceId": "SkuPriceId"
+  },
+  "money_columns": ["BilledCost", "EffectiveCost", "ListCost", "ContractedCost"],
+  "tag_json_column": "Tags",
+  "constants": {}
+}

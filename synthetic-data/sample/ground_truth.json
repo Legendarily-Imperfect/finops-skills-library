@@ -1,0 +1,83 @@
+{
+  "days": 7,
+  "idle_resource_ns": [
+    1,
+    28,
+    29
+  ],
+  "old_generation_resource_ns": [],
+  "orphaned_resource_ns": [],
+  "resource_count": 40,
+  "row_count": 282,
+  "seed": 42,
+  "spike": {
+    "date": "2026-06-27",
+    "factor": "4",
+    "owner": "Ember",
+    "resource_n": 20,
+    "service": "Compute Engine"
+  },
+  "tag_variants": [
+    {
+      "canonical": "Delta",
+      "resource_n": 15,
+      "written": "delta-team"
+    },
+    {
+      "canonical": "Atlas",
+      "resource_n": 19,
+      "written": "atlas"
+    },
+    {
+      "canonical": "Cascade",
+      "resource_n": 22,
+      "written": "Cascade "
+    },
+    {
+      "canonical": "Cascade",
+      "resource_n": 25,
+      "written": "cascasde"
+    },
+    {
+      "canonical": "Atlas",
+      "resource_n": 26,
+      "written": "ATLAS"
+    }
+  ],
+  "totals": {
+    "by_owner": {
+      "(untagged)": "903.979700",
+      "Atlas": "1759.642600",
+      "Borealis": "540.527400",
+      "Cascade": "1580.248500",
+      "Delta": "1030.964700",
+      "Ember": "1413.133500",
+      "Foxtrot": "1202.770900",
+      "Grove": "1320.042800",
+      "Harbor": "1237.323600"
+    },
+    "grand_total": "11892.853700"
+  },
+  "untagged_resource_ns": [
+    0,
+    16,
+    30,
+    33
+  ],
+  "unused_commitments": [
+    {
+      "cost": "373.000000",
+      "id": "commit-aws-00",
+      "provider": "AWS"
+    },
+    {
+      "cost": "531.220000",
+      "id": "commit-azure-01",
+      "provider": "Azure"
+    }
+  ],
+  "window": {
+    "end": "2026-06-30",
+    "start": "2026-06-24"
+  }
+}

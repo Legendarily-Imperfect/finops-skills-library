@@ -1,0 +1,29 @@
+{
+  "comment": "GCP BigQuery billing export (standard usage cost table), flattened column names as exported by `bq extract` or a SELECT with dots replaced by underscores. Labels arrive as a JSON array of {key,value}.",
+  "fingerprint": ["cost", "usage_start_time", "service_description", "project_id"],
+  "columns": {
+    "billing_account_id": "BillingAccountId",
+    "usage_start_time": "ChargePeriodStart",
+    "usage_end_time": "ChargePeriodEnd",
+    "cost": "BilledCost",
+    "currency": "BillingCurrency",
+    "service_description": "ServiceName",
+    "sku_description": "ChargeDescription",
+    "sku_id": "SkuId",
+    "project_id": "SubAccountId",
+    "project_name": "SubAccountName",
+    "location_region": "RegionId",
+    "resource_name": "ResourceName",
+    "resource_global_name": "ResourceId",
+    "usage_amount": "ConsumedQuantity",
+    "usage_unit": "ConsumedUnit"
+  },
+  "money_columns": ["BilledCost"],
+  "tag_json_column": "labels",
+  "constants": {
+    "ProviderName": "GCP",
+    "PublisherName": "GCP",
+    "InvoiceIssuerName": "GCP",
+    "ChargeCategory": "Usage"
+  }
+}

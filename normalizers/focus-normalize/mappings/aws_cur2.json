@@ -1,0 +1,31 @@
+{
+  "comment": "AWS Cost and Usage Report via Data Exports (CUR 2.0), snake_case column names. Resource tags arrive as individual resource_tags_user_<key> columns and fold into Tags.",
+  "fingerprint": ["line_item_unblended_cost", "line_item_usage_start_date", "line_item_product_code", "bill_payer_account_id"],
+  "columns": {
+    "bill_payer_account_id": "BillingAccountId",
+    "line_item_usage_account_id": "SubAccountId",
+    "bill_billing_period_start_date": "BillingPeriodStart",
+    "bill_billing_period_end_date": "BillingPeriodEnd",
+    "line_item_usage_start_date": "ChargePeriodStart",
+    "line_item_usage_end_date": "ChargePeriodEnd",
+    "line_item_unblended_cost": "BilledCost",
+    "line_item_net_unblended_cost": "EffectiveCost",
+    "pricing_public_on_demand_cost": "ListCost",
+    "line_item_currency_code": "BillingCurrency",
+    "line_item_line_item_type": "ChargeCategory",
+    "line_item_line_item_description": "ChargeDescription",
+    "line_item_product_code": "ServiceName",
+    "line_item_resource_id": "ResourceId",
+    "product_region": "RegionId",
+    "line_item_usage_amount": "ConsumedQuantity",
+    "pricing_unit": "ConsumedUnit",
+    "product_sku": "SkuId"
+  },
+  "money_columns": ["BilledCost", "EffectiveCost", "ListCost"],
+  "tag_prefix": "resource_tags_user_",
+  "constants": {
+    "ProviderName": "AWS",
+    "PublisherName": "AWS",
+    "InvoiceIssuerName": "AWS"
+  }
+}
