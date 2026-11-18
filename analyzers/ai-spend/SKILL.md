@@ -43,4 +43,4 @@ The prize is rarely "use less AI"; it is tier rebalancing (right model for the j
 
 ## Pairs With
 
-`otel-token-pull` for the telemetry, `tag-reconcile` for ownership, `anomaly-detect` for spikes, `exec-brief` for the writeup, and the Groundwork kit's `llm-spend-caps` when governance needs enforcement rather than a memo.
+`otel-token-pull` for the telemetry, `tag-reconcile` for ownership, `anomaly-detect` for spikes, `exec-brief` for the writeup, and `llm-spend-caps` (in `enforcement/`) when governance needs enforcement rather than a memo.
