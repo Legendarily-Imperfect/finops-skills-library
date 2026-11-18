@@ -2,7 +2,7 @@
 
 Atomic, cloud-agnostic-where-it-counts FinOps tooling, written to be read by your AI agent as much as run by you. Every skill states its data contract (FOCUS columns in and out), its assumptions, its non-goals, and the reasoning behind each rule, so an agent can understand it and adapt it to your environment.
 
-**Working name. Not yet published.** See `CATALOG.md` for the full tool list, layers, and build order.
+**The published free library.** Tools, layers, and build order are listed below.
 
 ## Layers
 
